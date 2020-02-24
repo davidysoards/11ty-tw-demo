@@ -1,7 +1,9 @@
 `mkdir 11ty-tw-demo`
+
 `cd 11ty-tw-demo`
 
 `npm init -y`
+
 `npm i @11ty/eleventy`
 
 Make an index.html file
