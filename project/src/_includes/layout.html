@@ -1,0 +1,22 @@
+---
+footNote: This is from the layout
+---
+
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="/css/style.css" />
+    <title>{{ pageTitle }}</title>
+  </head>
+  <body class="bg-gray-300">
+    {% include _header.html %}
+    <main class="container mx-auto px-4 py-2">
+      {{ content }}
+      <small>{{ footNote }}</small>
+    </main>
+    {% include _footer.html %}
+    <script src="/js/main.js"></script>
+  </body>
+</html>

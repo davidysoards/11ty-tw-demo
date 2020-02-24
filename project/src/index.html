@@ -1,0 +1,37 @@
+---
+layout: layout.html
+pageTitle: The Beatles
+beatles:
+  - name: John Lennon
+    instrument: Guitar
+    photo: https://res.cloudinary.com/davidsoards/image/upload/john.jpg
+  - name: Paul McCartney
+    instrument: Bass
+    photo: https://res.cloudinary.com/davidsoards/image/upload/paul.jpg
+  - name: George Harrison
+    instrument: Guitar
+    photo: https://res.cloudinary.com/davidsoards/image/upload/george.jpg
+  - name: Ringo Starr
+    instrument: Drums
+    photo: https://res.cloudinary.com/davidsoards/image/upload/ringo.jpg
+---
+
+<h1 class="text-5xl font-bold">{{ pageTitle }}</h1>
+<ul class="lg:grid lg:grid-cols-2 lg:gap-6">
+  {%- for beatle in beatles %}
+  <li
+    class="max-w-xl sm:flex items-center mx-auto p-6 bg-white rounded-lg shadow-xl mb-6"
+  >
+    <img
+      class="sm:w-1/2 sm:rounded-full"
+      src="{{beatle.photo}}"
+      alt="{{beatle.name}}"
+    />
+    <div class="text-center sm:text-left sm:pl-6">
+      <h2 class="text-3xl font-bold">{{beatle.name}}</h2>
+      <p class="text-xl">{{beatle.instrument}}</p>
+    </div>
+  </li>
+  {%- endfor %}
+</ul>
+<p><em>{{ globalData.greeting }}</em></p>

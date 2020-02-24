@@ -1,0 +1,13 @@
+---
+pageTitle: Blog
+layout: layout.html
+---
+<h1>{{ pageTitle }}</h1>
+<h2>Posts</h2>
+<ul>
+{%- for post in collections.post %}
+  <a href="{{ post.url }}">
+    <li>{{ post.data.title }}, {{ post.data.date }}</li>
+  </a>
+{%- endfor %}
+</ul>
