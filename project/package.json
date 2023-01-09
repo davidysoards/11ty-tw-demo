@@ -9,7 +9,7 @@
     "start": "eleventy --serve"
   },
   "dependencies": {
-    "@11ty/eleventy": "^0.10.0",
+    "@11ty/eleventy": "^1.0.2",
     "@fullhuman/postcss-purgecss": "^2.0.6",
     "autoprefixer": "^9.7.4",
     "postcss-cli": "^7.1.0",
